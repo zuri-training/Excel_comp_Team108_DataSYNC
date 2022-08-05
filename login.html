@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <script defer src="login.js"></script>
+    <title>Login</title>
+  </head>
+
+  <body>
+    <nav>
+      <a href="index.html"
+        ><img class="logo" src="images/logo.svg" alt="logo"
+      /></a>
+    </nav>
+
+    <main>
+      <div class="left">
+        <div id="error"></div>
+        <h1>Log In</h1>
+        <p>
+          Don't have an account yet?
+          <a href="signup.html" class="SignUp">Sign Up!</a>
+        </p>
+        <form id="form" action="">
+          <label for="email">EMAIL ADDRESS</label><br />
+          <input
+            type="email"
+            placeholder="Team108@zuri.com"
+            id="email"
+            name="email"
+            class="formInput"
+          /><br />
+          <label for="password">PASSWORD</label><br />
+          <input
+            type="password"
+            placeholder="******"
+            id="password"
+            name="password"
+            class="formInput"
+          />
+          <br />
+          <button type="submit" class="bttn">Sign In</button>
+        </form>
+        <br /><br />
+        <div style="text-align: center">
+          <p>
+            Or sign in with<br />
+            <a href="www.google.com"
+              ><img
+                src="images/google-logo-png-suite-everything-you-need-know-about-google-newest-0.svg"
+                alt="google"
+                class="google"
+              />
+            </a>
+            <br /><br />
+          </p>
+
+          <p>
+            By signing in, you agree to our<br />
+            <a href="#">Privacy policy</a> & <a href="#">Terms of Service</a>.
+          </p>
+        </div>
+      </div>
+      <div>
+        <img src="Login-Images/Frame 1.svg" alt="" />
+      </div>
+    </main>
+  </body>
+</html>
