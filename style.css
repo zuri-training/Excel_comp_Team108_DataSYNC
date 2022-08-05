@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --pale-cyan: hsla(236, 87%, 94%, 1);
+  --blue: hsl(234, 95%, 53%, 1);
+}
+
+/* NAVBAR SECTION CSS CODE*/
+nav {
+  background-color: rgb(212, 200, 212);
+  padding: 5px 20px;
+}
+ul {
+  list-style: none;
+}
+a {
+  /*color: rgb(105, 13, 13);*/
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.nav li {
+  font-size: 16px;
+  padding: 15px 5px;
+}
+.nav li a {
+  display: block;
+}
+nav .sec a {
+  color: #ce1949;
+}
+nav .item a {
+  color: #ce1949;
+}
+
+.logo a {
+  font-size: 20px;
+}
+.button a {
+  text-decoration: none;
+  color: white;
+  padding: 15px 25px;
+  background: linear-gradient(85.8deg, #81365f -15.76%, #ce1949 73.17%);
+  border: 2px solid #ce1949;
+  border-radius: 4px;
+}
+.button.sec a {
+  background: transparent;
+}
+.button a:hover {
+  background: rgb(184, 183, 183);
+  border-color: rgb(184, 183, 183);
+  transition: all 0.25s;
+  opacity: 1px;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* SECTION 1 CSS CODES */
+.section1 {
+  width: 100%;
+  height: 1000px;
+  background-image: url("images/you\ are\ in\ a\ good\ company.svg");
+  background-size: cover;
+  padding-left: 10%;
+  padding-top: 100px;
+}
+.sec1-info {
+  width: 50%;
+  /*height: 400px;*/
+}
+.sec1-info h2 {
+  color: rgb(126, 126, 126);
+  font-size: 40px;
+}
+.sec1-info .com {
+  color: #ce1949;
+}
+.sec1-info .ss {
+  color: green;
+}
+.sec1-info p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 5px;
+  color: rgb(126, 126, 126);
+}
+.sec1-button {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.sec1-button button {
+  width: 150px;
+  height: 35px;
+  margin-left: 20px;
+}
+.sec1-button .signin {
+  border: 2px solid #ce1949;
+  border-radius: 5px;
+  background-color: white;
+}
+.sec1-button .comp {
+  border: 2px solid #ce1949;
+  border-radius: 5px;
+  background: linear-gradient(85.8deg, #81365f -15.76%, #ce1949 73.17%);
+}
+.signin a {
+  color: #ce1949;
+}
+.comp a {
+  color: white;
+}
+.sec1-stats {
+  display: flex;
+  width: 25%;
+  justify-content: space-between;
+  margin-left: 3%;
+}
+.sec1-stats h3 {
+  color: blue;
+}
+.sec1-txt {
+  display: flex;
+  width: 25%;
+  justify-content: space-between;
+  margin-left: 1%;
+}
+
+/* SECTION 2 CSS CODES*/
+.section2 {
+  height: 1100px;
+  width: 100%;
+  background-color: rgb(236, 236, 236);
+}
+.sec-header {
+  text-align: center;
+  height: 25px;
+  padding: 15px;
+}
+.all-features {
+  height: 1000px;
+  width: 75%;
+  margin-left: 12.5%;
+}
+.feat {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.feat .text {
+  width: 40%;
+  align-self: center;
+}
+.feat h2 {
+  margin-bottom: 10px;
+  color: rgb(65, 65, 65);
+}
+.feat .img {
+  width: 40%;
+}
+.protect .img {
+  order: 1;
+  background-color: rgb(192, 20, 49);
+}
+.protect .txtpro {
+  order: 2;
+  text-align: end;
+}
+.library .img {
+  order: 1;
+  background-color: rgb(192, 20, 49);
+}
+.compare .img {
+  background-color: blue;
+}
+.share .img {
+  background-color: blue;
+}
+.library .txtlib {
+  order: 2;
+  text-align: end;
+}
+.text p {
+  font-size: 12px;
+}
+
+.section {
+  padding: 20px 0;
+  height: 400px;
+  /* max-width: 600px; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*position: absolute;*/
+  /*z-index: 10;
+  bottom: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: auto;*/
+  background: white;
+}
+.form {
+  display: inline;
+}
+.b h3 {
+  font-size: 20px;
+  color: rgb(44, 44, 44);
+  margin-bottom: 7px;
+}
+.b p {
+  margin-bottom: 10px;
+}
+.form input {
+  width: 500px;
+  height: 30px;
+  border: 1px solid #ce1949;
+  border-radius: 3px;
+  padding-left: 5px;
+}
+.form button {
+  width: 150px;
+  height: 30px;
+  color: white;
+  background: linear-gradient(85.8deg, #81365f -15.76%, #ce1949 73.17%);
+  border: 1px solid #ce1949;
+  border-radius: 3px;
+}
+
+/* LANDING PAGE FOOTER*/
+footer {
+  padding-top: 40px;
+  background: var(--blue);
+  /*position: absolute;*/
+  width: 100%;
+  bottom: 0;
+  left: 0px;
+  height: 400px;
+}
+
+footer .content {
+  max-width: 1250px;
+  margin: auto;
+  padding: 20px 30px 30px 20px;
+}
+
+footer .content .links-boxes {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+footer .content .links-boxes .box {
+  width: calc(100% / 5 - 10px);
+}
+
+footer .content .links-boxes .box li {
+  margin: 6px 0;
+  list-style: none;
+}
+
+footer .content .links-boxes .box li a {
+  color: white;
+  font: 24px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+footer .content .links-boxes .box li a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 10px auto;
+}
+
+footer .media-icon {
+  font-size: 30px;
+  align-self: flex-start;
+}
+
+footer .social {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+}
+
+.copyright {
+  color: white;
+  font-size: 12px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+/* @media all and(min-width:468px) {
+  .nav {
+    justify-content: center;
+  }
+  .logo {
+    flex: 1;
+  }
+  .item.button {
+    width: auto;
+    display: block;
+  }
+  .button.sec {
+    border: 0;
+  }
+  .button a {
+    padding: 7px 15px;
+    background: red;
+  }
+} */

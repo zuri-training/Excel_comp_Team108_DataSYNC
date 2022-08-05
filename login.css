@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+body {
+  background: #f2f3f8;
+  padding: 10px;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  margin-left: 2%;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.left {
+  padding: 50px;
+  margin: 10px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 52px;
+}
+
+p {
+  font-weight: 400;
+}
+
+.formInput {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px;
+  gap: 10px;
+  width: 350px;
+  height: 40px;
+  color: black;
+  background: #ffffff;
+  border: 1px solid #d8d7d7;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+.formInput:focus {
+  border: 1px solid #000000;
+}
+
+.formInput:valid {
+  border: 1px solid #0b9919;
+}
+
+.formInput:invalid {
+  border: 1px solid #f80f0f;
+}
+
+.google {
+  width: 24px;
+  height: 24px;
+  border-radius: 2px;
+}
+
+.SignUp {
+  width: 85px;
+  height: 30px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-decoration-line: underline;
+  background: linear-gradient(85.8deg, #81365f -15.76%, #ce1949 73.17%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.SignUp:hover {
+  width: 66px;
+  height: 33px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+.SignUp:active {
+  width: 60px;
+  height: 30px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-decoration-line: underline;
+  color: #ce1949;
+}
+
+a {
+  color: black;
+  text-decoration: underline;
+}
+
+.bttn {
+  float: right;
+  color: #fff;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 180px;
+  height: 40px;
+  background: linear-gradient(85.8deg, #81365f -15.76%, #ce1949 73.17%);
+  border-radius: 4px;
+}
+
+.bttn:active {
+  padding: 8px 24px;
+  gap: 8px;
+  width: 180px;
+  height: 44px;
+  background: #ce1949;
+}
+
+#error {
+  color: red;
+}
