@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 body {
-  background: #f2f3f8;
-  padding: 10px;
+  width: 100%;
+  height: 100vh;
+  background: #F2F3F8;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .logo {
@@ -13,12 +14,19 @@ body {
   margin-bottom: 0;
 }
 
+
 main {
   width: 80%;
   margin: auto;
   display: flex;
+  justify-content: center;
   align-items: center;
-  height: 100vh;
+}
+
+@media screen and (max-width:900px) {
+  main {
+    flex-wrap: wrap-reverse;
+  }
 }
 
 .left {
@@ -31,9 +39,26 @@ h1 {
   font-size: 52px;
 }
 
-p {
+form label {
+  width: 112px;
+  height: 21px;
+  font-family: 'Poppins';
+  font-style: normal;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.06em;
+  color: #000000;
 }
+
+.left p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+
 
 .formInput {
   display: flex;
@@ -43,9 +68,8 @@ p {
   gap: 10px;
   width: 350px;
   height: 40px;
-  color: black;
-  background: #ffffff;
-  border: 1px solid #d8d7d7;
+  background: #FFFFFF;
+  border: 1px solid #D8D7D7;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
 }
@@ -54,13 +78,11 @@ p {
   border: 1px solid #000000;
 }
 
-.formInput:valid {
-  border: 1px solid #0b9919;
+/* 
+input:valid {
+  border: 1px solid #0B9919;
 }
-
-.formInput:invalid {
-  border: 1px solid #f80f0f;
-}
+*/
 
 .google {
   width: 24px;
@@ -69,21 +91,19 @@ p {
 }
 
 .SignUp {
-  width: 85px;
-  height: 30px;
+  font-family: 'Poppins';
+  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
   text-decoration-line: underline;
-  background: linear-gradient(85.8deg, #81365f -15.76%, #ce1949 73.17%);
+  background: linear-gradient(85.8deg, #81365F -15.76%, #CE1949 73.17%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .SignUp:hover {
-  width: 66px;
-  height: 33px;
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
@@ -91,15 +111,12 @@ p {
 }
 
 .SignUp:active {
-  width: 60px;
-  height: 30px;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 30px;
   text-decoration-line: underline;
-  color: #ce1949;
+  color: #CE1949;
 }
 
 a {
@@ -121,7 +138,7 @@ a {
   gap: 10px;
   width: 180px;
   height: 40px;
-  background: linear-gradient(85.8deg, #81365f -15.76%, #ce1949 73.17%);
+  background: linear-gradient(85.8deg, #81365F -15.76%, #CE1949 73.17%);
   border-radius: 4px;
 }
 
@@ -130,7 +147,7 @@ a {
   gap: 8px;
   width: 180px;
   height: 44px;
-  background: #ce1949;
+  background: #CE1949;
 }
 
 #error {
