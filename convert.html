@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{%static'/css/convert.css'%}" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+        <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+      
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <main>
+      
+        <div class="zone">
+          <div class="drop-zone">
+            
+            <span class="drop-zone__prompt">
+              <br>
+              <br>
+              <br>
+              <br>
+              <img src="{%static'/images/4795396401556105703.svg'%}" alt="" />
+              
+              <h2>Drag and drop</h2> <h5>your files here or browse <br>
+              to upload your file</h5></span>
+            <input type="file" name="myfile" class="drop-zone__input" />
+          </div>
+          <div class="icons">
+            <i class="fa-brands fa-dropbox"></i>
+           <i class="fa-solid fa-link"></i>
+            <i class="fa-brands fa-google-drive"></i>
+          </div>
+        </div>
+    
+      
+      <div class="select-menu">
+        <div class="select-btn">
+        <span class="sBtn-text">Select destination format</span>
+          <i class="bx bx-chevron-down"></i>
+        </div>
+
+        <ul class="options">
+          <li class="option">
+            <i class="bx bx-hot" style="color: black"></i>
+            <span class="option-text">PDF</span>
+          </li>
+          <li class="option">
+            <i class="bx bx-hot" style="color: black"></i>
+            <span class="option-text">CSV</span>
+          </li>
+          <li class="option">
+            <i class="bx bx-hot" style="color: black"></i>
+            <span class="option-text">WORD DOC</span>
+          </li>
+          <li class="option">
+            <i class="bx bx-hot" style="color: black"></i>
+            <span class="option-text">TEXT</span>
+          </li>
+        </ul>
+      <div class="btn-group">
+          <button type="submit" class="btn btn-red com">
+            <a class="red" href="" >Convert</a>
+          </button>
+    </main>
+
+    <footer>
+      <div></div>
+    </footer>
+    <script src="./convert.js"></script>
+  </body>
+</html>

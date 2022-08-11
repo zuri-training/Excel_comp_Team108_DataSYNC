@@ -13,11 +13,11 @@ body {
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
 }
-.logo {
+/* .logo {
   margin-left: 2%;
   margin-top: 15px;
   margin-bottom: 0;
-}
+} */
 .main_container {
   height: 600px;
   width: 70%;

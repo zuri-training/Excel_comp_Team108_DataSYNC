@@ -1,251 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-}
-
-/* Nav Start */
-
-nav {
-    /* position: fixed;  */
-    width: 100%;
-    height: auto;
-    left: 0px;
-    top: 0px;
-    background: #E2E4FD;
-    padding: 5px 20px;
-}
-
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.nav li {
-    font-size: 16px;
-    padding: 15px 5px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
 }
 
 .select {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
 }
-
-.item a {
-    width: 61px;
-    height: 30px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 30px;
-    text-transform: capitalize;
-    background: linear-gradient(85.8deg, #81365F -15.76%, #CE1949 73.17%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-
-.nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.FAQ {
-    background: none;
-    border: 1px solid #000000;
-    border-radius: 4px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 12px;
-    gap: 10px;
-    width: 65px;
-    height: 46px;
-}
-
-.FAQ a {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: center;
-    text-transform: capitalize;
-    color: #000000;
-}
-
-.profile-icon {
-    border-radius: 30px;
-    width: 36px;
-    height: 36px;
-    background-color: #AAA;
-}
-
-.dropbttn {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 18px;
-    gap: 8px;
-    width: 200px;
-    height: 28px;
-    background: none;
-    font-style: normal;
-    font-weight: 400;
-    border: none;
-}
-
-.dropdown-content {
-
-
-    /* Auto layout */
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 18px;
-    gap: 8px;
-
-    width: 200px;
-    height: 28px;
-
-    background: #FFFFFF;
-    border-radius: 0px;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
-/* Nav End  */
-
 
 input {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 12px;
-    gap: 10px;
-    height: 40px;
-    width: 80%;
-    background: #FFFFFF;
-    border: 1px solid #D8D7D7;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
-    border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px;
+  gap: 10px;
+  height: 40px;
+  width: 80%;
+  background: #ffffff;
+  border: 1px solid #d8d7d7;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
 }
 
 .File-Area {
-    width: 80%;
-    margin: auto;
+  width: 80%;
+  margin: auto;
 }
 
 .grid-file-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 3rem 1rem;
-    padding: 3rem 0;
-    margin: 0 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 3rem 1rem;
+  padding: 3rem 0;
+  margin: 0 1.5rem;
 }
 
 .file-container {
-    display: flex;
-    flex-direction: column;
-    border-radius: 4px;
-    gap: -4px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  gap: -4px;
 }
 
 .thumbnail {
-    position: relative;
-    display: flex;
-    background: #FFFFFF;
-    margin: auto;
+  position: relative;
+  display: flex;
+  background: #ffffff;
+  margin: auto;
 }
 
 .thumbnail-image {
-    width: 100%;
-    height: 100%;
-    min-width: 68px;
-    min-height: 75.32px;
-    background-color: #AAA;
+  width: 100%;
+  height: 100%;
+  min-width: 68px;
+  min-height: 75.32px;
+  background-color: #aaa;
 }
 
 .file-bottom-section {
-    display: flex;
-    align-items: flex-start;
-    background: #E2E4FD;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
+  display: flex;
+  align-items: flex-start;
+  background: #e2e4fd;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
 }
 
 .file-details {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
 }
 
 .file-name {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 18px;
-    letter-spacing: 0.06em;
-    text-decoration: none;
-    color: #010204;
-
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  color: #010204;
 }
 
 .file-metadata {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: 15px;
-    width: 184px;
-    height: 30px;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;
-    letter-spacing: 0.06em;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 15px;
+  width: 184px;
+  height: 30px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.06em;
 }
-
 
 .list-file-section {
-    display: list-item;
-    gap: 3rem;
-    padding: 3rem;
-    margin: 1.5rem;
+  display: list-item;
+  gap: 3rem;
+  padding: 3rem;
+  margin: 1.5rem;
 }
-
