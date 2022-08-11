@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+input {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px;
+  gap: 10px;
+  height: 40px;
+  width: 80%;
+  background: #ffffff;
+  border: 1px solid #d8d7d7;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+.File-Area {
+  width: 80%;
+  margin: auto;
+}
+
+.grid-file-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 3rem 1rem;
+  padding: 3rem 0;
+  margin: 0 1.5rem;
+}
+
+.file-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  gap: -4px;
+}
+
+.thumbnail {
+  position: relative;
+  display: flex;
+  background: #ffffff;
+  margin: auto;
+}
+
+.thumbnail-image {
+  width: 100%;
+  height: 100%;
+  min-width: 68px;
+  min-height: 75.32px;
+  background-color: #aaa;
+}
+
+.file-bottom-section {
+  display: flex;
+  align-items: flex-start;
+  background: #e2e4fd;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.file-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+.file-name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  color: #010204;
+}
+
+.file-metadata {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 15px;
+  width: 184px;
+  height: 30px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.06em;
+}
+
+.list-file-section {
+  display: list-item;
+  gap: 3rem;
+  padding: 3rem;
+  margin: 1.5rem;
+}

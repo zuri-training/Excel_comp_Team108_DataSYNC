@@ -1,0 +1,39 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static '/css/navbar' %}" />
+
+<nav id="nav">
+            <div class="nav"><img src="{% static '/images/logo svg.svg' %}" alt="Hello World" class="logo" />
+                <ul class="nav">
+                    <li class="item"><a href="{% url 'home' %}">Home</a></li>
+                    <li class="item"><a href="#">Compare</a></li>
+                    <li class="item"><a href="#">Convert</a></li>
+                    <li class="item"><a href="{% url 'library' %}">Files Library</a></li>
+                    <li class="item"><a href="{% url 'logout' %}">Logout</a></li>
+                    <li class="item"><a href="{% url 'login' %}">login</a></li>
+                    <li class="item"><a href="{% url 'about' %}">about</a></li>
+                    <li class="item"><a href="{% url 'terms' %}">T n C </a></li>
+                    <li class="item"><a href="{% url 'signup' %}">Register</a></li>
+                    <li class="item"><a href="{% url 'singlefile' %}">singlefile</a></li>
+                    <li class="item"><a href="{% url 'multifiles' %}">multifiles</a></li>
+                    <li class="item"></li>
+                </ul>
+                <ul class="nav">
+                    <li class=" "><button class="FAQ"><a href="#">FAQ</a></button></li>
+                    <li class=" "><a href="#">
+                            <img src="{% static '/images/notification.svg' %}" alt="Notifications" />
+                        </a></li>
+                    <li class=" "><a href="#">
+                            <img class="T108profile-icon" src="http:///unsplash.it/36/36?gravity=center"
+                                alt="Your Channel" />
+                        </a></li>
+                    <li class=" ">
+                        <div class="dropdown">Hello, {{ request.user }}
+                            <button class="dropbttn">
+                                <img src="{% static '/images/arrow.svg' %}" alt=""></button>
+                       
+                    </li>
+                   </ul>
+
+            </div>
+            
+        </nav>
