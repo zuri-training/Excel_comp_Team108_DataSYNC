@@ -15,6 +15,11 @@ main {
   width: 30%;
   margin: 50px 35%;
 }
+.btn-group :hover {
+  background: rgb(189, 180, 180);
+  transition: all 0.25s;
+  opacity: 1px;
+}
 .btn-group .btn {
   width: 45%;
   height: 40px;
@@ -36,9 +41,9 @@ main {
 }
 .canvas {
   background-color: rgb(212, 200, 212);
-  width: 30%;
-  height: 300px;
-  margin-left: 35%;
+  width: 40%;
+  height: 310px;
+  margin-left: 30%;
   padding-top: 2px;
 }
 .drop-zone {
@@ -93,10 +98,6 @@ main {
 .btn-group .com {
   margin: 1px 2%;
 }
-.dropdown #select {
-  height: 40px;
-  border: 1px solid #ce1949;
-}
 
 .icons {
   font-size: 20px;
@@ -106,7 +107,7 @@ main {
 }
 
 .icons i {
-  margin-left: 10px;
+  margin-left: 20px;
   margin-top: 20px;
 }
 

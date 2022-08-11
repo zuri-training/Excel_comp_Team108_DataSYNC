@@ -14,6 +14,60 @@ body {
 }
 
 /* NAVBAR SECTION CSS CODE*/
+.main-header {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(212, 200, 212);
+  padding: 10px 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-logo {
+  width: 10%;
+  size: 20px;
+  margin-left: 3%;
+}
+.header-nav {
+  width: 40%;
+  margin-left: 0px;
+}
+.nav-group {
+  display: flex;
+  margin-left: 0px;
+}
+.nav-group li {
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+.nav-group li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #ce1949;
+  margin-right: 30px;
+}
+.nav-group li a:hover {
+  text-decoration: underline;
+}
+
+.user-group {
+  width: 30%;
+  margin-top: 10px;
+}
+.user-group button {
+  width: 15%;
+  height: 40px;
+  align-items: center;
+  border: 2px solid rgb(119, 118, 119);
+  background-color: rgb(212, 200, 212);
+  border-radius: 2px;
+}
+.user-group a {
+  color: rgb(119, 118, 119);
+  text-decoration: none;
+  font-weight: 600;
+}
 
 /* SECTION 1 CSS CODES */
 .section1 {
@@ -66,9 +120,9 @@ body {
   transition: all 0.25s;
   opacity: 1px;
 }
-
 .comp a {
   color: white;
+  text-decoration: none;
 }
 .sec1-stats {
   display: flex;
@@ -149,11 +203,18 @@ body {
 .section {
   padding: 20px 0;
   height: 400px;
+  /* max-width: 600px; */
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /*position: absolute;*/
+  /*z-index: 10;
+  bottom: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: auto;*/
   background: white;
 }
 .form {
@@ -182,25 +243,3 @@ body {
   border: 1px solid #ce1949;
   border-radius: 3px;
 }
-
-/* LANDING PAGE FOOTER*/
-
-/* @media all and(min-width:468px) {
-  .nav {
-    justify-content: center;
-  }
-  .logo {
-    flex: 1;
-  }
-  .item.button {
-    width: auto;
-    display: block;
-  }
-  .button.sec {
-    border: 0;
-  }
-  .button a {
-    padding: 7px 15px;
-    background: red;
-  }
-} */
