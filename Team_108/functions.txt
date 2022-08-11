@@ -1,0 +1,15 @@
+"{% static '/images /logo svg.svg ' %}"
+
+
+"images /how to use.svg "
+
+
+
+
+
+
+
+
+src="images
+
+src="{% static '/images
