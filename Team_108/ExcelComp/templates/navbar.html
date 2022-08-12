@@ -1,0 +1,43 @@
+
+ {% load static %}
+<link rel="stylesheet" type="text/css" href="{% static '/css/navbar.css' %}" />
+<!-- <link rel="stylesheet" href="navbar.css"> -->
+<nav id="ztnav">
+            <div class="ztnavul"><img src="{% static '/images/logo svg.svg' %}" alt="Hello World" class="logo" />
+                <ul class="ztnavul">
+                    <li class="ztitem"><a href="{% url 'home' %}">Home</a></li>
+                    <li class="ztitem"><a href="#">Compare</a></li>
+                    <li class="ztitem"><a href="#">Convert</a></li>
+                    <li class="ztitem"><a href="{% url 'library' %}">Files Library</a></li>
+                    <li class="ztitem"><a href="{% url 'libgrid' %}">Library Grid</a></li>
+                    <li class="ztitem"><a href="{% url 'dashboard' %}">DashBoard</a></li>
+                    <li class="ztitem"><a href="{% url 'feature' %}">Feature Select</a></li>
+                    <li class="ztitem"><a href="{% url 'logout' %}">Logout</a></li>
+                    <li class="ztitem"><a href="{% url 'login' %}">login</a></li>
+                    <li class="ztitem"><a href="{% url 'terms' %}">T n C </a></li>
+                    <li class="ztitem"><a href="{% url 'signup' %}">Register</a></li>
+                    <li class="ztitem"><a href="{% url 'singlefile' %}">singlefile</a></li>
+                    <li class="ztitem"><a href="{% url 'multifiles' %}">multifiles</a></li>
+                    <li class="ztitem"><a href="{% url 'contact' %}">Contact Us</a></li>
+
+                </ul>
+                <ul class="ztnavul">
+                    <li class=" "><button class="ztFAQ"><a href="#">FAQ</a></button></li>
+                    <li class=" "><a href="#">
+                            <img src="{% static '/images/notification.svg' %}" alt="Notifications" />
+                        </a></li>
+                    <li class=" "><a href="#">
+                            <img class="ztprofile-icon" src="http:///unsplash.it/36/36?gravity=center"
+                                alt="Your Channel" />
+                        </a></li>
+                    <li class=" ">
+                        <div class="ztdropdown">Hello, {{ request.user }}
+                            <button class="ztdropbttn">
+                                <img src="{% static '/images/arrow.svg' %}" alt=""></button>
+                       
+                    </li>
+                   </ul>
+
+            </div>
+            
+        </nav>
