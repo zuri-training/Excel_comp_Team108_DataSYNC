@@ -1,0 +1,60 @@
+{% extends 'main.html' %} {% block content %}{% load static %}
+<link rel="stylesheet" href="{% static '/css/login.css' %}" />
+<main>
+  <div class="left">
+    <div id="error"></div>
+    <h1>Log In</h1>
+    <p>
+      Don't have an account yet?
+      <a href="{% url 'signup' %}" class="SignUp">Sign Up!</a>
+    </p>
+    <form id="form" method="POST" action="">
+      {% csrf_token %}
+      <label for="email">USERNAME</label><br />
+      <input
+        type="text"
+        name="username"
+        id="username"
+        class="formInput"
+        placeholder="Username"
+      />
+      <br />
+      <label for="password">PASSWORD</label><br />
+      <input
+        type="password"
+        placeholder="******"
+        id="password"
+        name="password"
+        class="formInput"
+      />
+      <br />
+      <button type="submit" class="bttn">Sign In</button>
+    </form>
+    <br /><br />
+    <div style="text-align: center">
+      <!-- <p>
+            Or sign in with<br />
+            <a href="www.google.com"
+              ><img
+                src="images/google-logo-png-suite-everything-you-need-know-about-google-newest-0.svg"
+                alt="google"
+                class="google"
+              />
+            </a>
+            <br /><br />
+          </p> -->
+      {{form.errors}} {% for message in messages %}
+      <p>{{message}}</p>
+      {% endfor %}
+      <p style="font-size: 16px">
+        By signing in, you agree to our<br />
+        <a href="{% url 'terms' %}">Privacy policy</a> &
+        <a href="{% url 'terms' %}">Terms of Service</a>.
+      </p>
+    </div>
+  </div>
+  <div>
+    <img src="{% static '/images/Frame 1.svg' %}" alt="Hello There" />
+  </div>
+</main>
+{% endblock content %}
