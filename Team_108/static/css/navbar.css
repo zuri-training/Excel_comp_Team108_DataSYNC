@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+nav {
+  /* position: fixed;  */
+  width: 100%;
+  height: auto;
+  left: 0px;
+  top: 0px;
+  background: #20d223;
+  padding: 5px 20px;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav li {
+  font-size: 16px;
+  padding: 15px 5px;
+}
+
+/* Nav Start */
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.item a {
+  width: 61px;
+  height: 30px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 30px;
+  text-transform: capitalize;
+  background: linear-gradient(85.8deg, #e6e1e4 -15.76%, #19ce6d 73.17%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.FAQ {
+  background: none;
+  border: 1px solid #570909;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 10px;
+  width: 65px;
+  height: 46px;
+}
+
+.FAQ a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.profile-icon {
+  border-radius: 30px;
+  width: 36px;
+  height: 36px;
+  background-color: #aaa;
+}
+
+.dropbttn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 18px;
+  gap: 8px;
+  width: 200px;
+  height: 28px;
+  background: none;
+  font-style: normal;
+  font-weight: 400;
+  border: none;
+}
+
+.dropdown-content {
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 18px;
+  gap: 8px;
+
+  width: 200px;
+  height: 28px;
+
+  background: #ffffff;
+  border-radius: 0px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/* Nav End  */

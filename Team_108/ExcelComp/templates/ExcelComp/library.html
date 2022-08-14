@@ -1,0 +1,612 @@
+{% extends 'ExcelComp/main.html' %} {% block content %}
+<main>
+  <div class="select">
+    <img
+      src="Images/state=list, type=Default.svg"
+      alt=""
+      id="list"
+      onclick="listView()"
+    />
+    <img
+      src="Images/state=tiles, type=Default.svg"
+      alt=""
+      id="grid"
+      onclick="gridView()"
+    />
+    <h2>|</h2>
+    <img src="Images/state=filter 2, type=default.svg" alt="" />
+    <input type="search" placeholder="| Search Files" />
+  </div>
+  <div class="File-Area">
+    <section class="grid-file-section">
+      <article class="file-container">
+        <div>
+          <a href="#" class="thumbnail">
+            <img
+              class="thumbnail-image"
+              src="http://unsplash.it/250/150?gravity=center"
+            />
+          </a>
+        </div>
+        <div class="file-bottom-section">
+          <div class="file-details">
+            <div>
+              <a href="#" class="file-name">File Name</a>
+              <a href="#" class="file-menu">...</a>
+            </div>
+            <div class="file-metadata">
+              <span>15kb</span>
+              <span>Exe</span>
+              <span>15-Apr-2022</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="file-container">
+        <a href="#" class="thumbnail">
+          <img
+            class="thumbnail-image"
+            src="http://unsplash.it/250/150?gravity=center"
+          />
+        </a>
+        <div class="file-bottom-section">
+          <div class="file-details">
+            <div>
+              <a href="#" class="file-name">File Name</a>
+              <a href="#" class="file-menu">...</a>
+            </div>
+            <div class="file-metadata">
+              <span>15kb</span>
+              <span>Exe</span>
+              <span>15-Apr-2022</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="file-container">
+        <a href="#" class="thumbnail">
+          <img
+            class="thumbnail-image"
+            src="http://unsplash.it/250/150?gravity=center"
+          />
+        </a>
+        <div class="file-bottom-section">
+          <div class="file-details">
+            <div>
+              <a href="#" class="file-name">File Name</a>
+              <a href="#" class="file-menu">...</a>
+            </div>
+            <div class="file-metadata">
+              <span>15kb</span>
+              <span>Exe</span>
+              <span>15-Apr-2022</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="file-container">
+        <a href="#" class="thumbnail">
+          <img
+            class="thumbnail-image"
+            src="http://unsplash.it/250/150?gravity=center"
+          />
+        </a>
+        <div class="file-bottom-section">
+          <div class="file-details">
+            <div>
+              <a href="#" class="file-name">File Name</a>
+              <a href="#" class="video-channel-name">...</a>
+            </div>
+            <div class="file-metadata">
+              <span>15kb</span>
+              <span>Exe</span>
+              <span>15-Apr-2022</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="file-container">
+        <a href="#" class="thumbnail">
+          <img
+            class="thumbnail-image"
+            src="http://unsplash.it/250/150?gravity=center"
+          />
+        </a>
+        <div class="file-bottom-section">
+          <div class="file-details">
+            <div>
+              <a href="#" class="file-name">File Name</a>
+              <a href="#" class="video-channel-name">...</a>
+            </div>
+            <div class="file-metadata">
+              <span>15kb</span>
+              <span>Exe</span>
+              <span>15-Apr-2022</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="file-container">
+        <a href="#" class="thumbnail">
+          <img
+            class="thumbnail-image"
+            src="http://unsplash.it/250/150?gravity=center"
+          />
+        </a>
+        <div class="file-bottom-section">
+          <div class="file-details">
+            <div>
+              <a href="#" class="file-name">File Name</a>
+              <a href="#" class="video-channel-name">...</a>
+            </div>
+            <div class="file-metadata">
+              <span>15kb</span>
+              <span>Exe</span>
+              <span>15-Apr-2022</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="file-container">
+        <a href="#" class="thumbnail">
+          <img
+            class="thumbnail-image"
+            src="http://unsplash.it/250/150?gravity=center"
+          />
+        </a>
+        <div class="file-bottom-section">
+          <div class="file-details">
+            <div>
+              <a href="#" class="file-name">File Name</a>
+              <a href="#" class="video-channel-name">...</a>
+            </div>
+            <div class="file-metadata">
+              <span>15kb</span>
+              <span>Exe</span>
+              <span>15-Apr-2022</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="file-container">
+        <a href="#" class="thumbnail">
+          <img
+            class="thumbnail-image"
+            src="http://unsplash.it/250/150?gravity=center"
+          />
+        </a>
+        <div class="file-bottom-section">
+          <div class="file-details">
+            <div>
+              <a href="#" class="file-name">File Name</a>
+              <a href="#" class="video-channel-name">...</a>
+            </div>
+            <div class="file-metadata">
+              <span>15kb</span>
+              <span>Exe</span>
+              <span>15-Apr-2022</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="file-container">
+        <a href="#" class="thumbnail">
+          <img
+            class="thumbnail-image"
+            src="http://unsplash.it/250/150?gravity=center"
+          />
+        </a>
+        <div class="file-bottom-section">
+          <div class="file-details">
+            <div>
+              <a href="#" class="file-name">File Name</a>
+              <a href="#" class="video-channel-name">...</a>
+            </div>
+            <div class="file-metadata">
+              <span>15kb</span>
+              <span>Exe</span>
+              <span>15-Apr-2022</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="file-container">
+        <a href="#" class="thumbnail">
+          <img
+            class="thumbnail-image"
+            src="http://unsplash.it/250/150?gravity=center"
+          />
+        </a>
+        <div class="file-bottom-section">
+          <div class="file-details">
+            <div>
+              <a href="#" class="file-name">File Name</a>
+              <a href="#" class="video-channel-name">...</a>
+            </div>
+            <div class="file-metadata">
+              <span>15kb</span>
+              <span>Exe</span>
+              <span>15-Apr-2022</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="file-container">
+        <a href="#" class="thumbnail">
+          <img
+            class="thumbnail-image"
+            src="http://unsplash.it/250/150?gravity=center"
+          />
+        </a>
+        <div class="file-bottom-section">
+          <div class="file-details">
+            <div>
+              <a href="#" class="file-name">File Name</a>
+              <a href="#" class="video-channel-name">...</a>
+            </div>
+            <div class="file-metadata">
+              <span>15kb</span>
+              <span>Exe</span>
+              <span>15-Apr-2022</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="file-container">
+        <a href="#" class="thumbnail">
+          <img
+            class="thumbnail-image"
+            src="http://unsplash.it/250/150?gravity=center"
+          />
+        </a>
+        <div class="file-bottom-section">
+          <div class="file-details">
+            <div>
+              <a href="#" class="file-name">File Name</a>
+              <a href="#" class="video-channel-name">...</a>
+            </div>
+            <div class="file-metadata">
+              <span>15kb</span>
+              <span>Exe</span>
+              <span>15-Apr-2022</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="file-container">
+        <a href="#" class="thumbnail">
+          <img
+            class="thumbnail-image"
+            src="http://unsplash.it/250/150?gravity=center"
+          />
+        </a>
+        <div class="file-bottom-section">
+          <div class="file-details">
+            <div>
+              <a href="#" class="file-name">File Name</a>
+              <a href="#" class="video-channel-name">...</a>
+            </div>
+            <div class="file-metadata">
+              <span>15kb</span>
+              <span>Exe</span>
+              <span>15-Apr-2022</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="file-container">
+        <a href="#" class="thumbnail">
+          <img
+            class="thumbnail-image"
+            src="http://unsplash.it/250/150?gravity=center"
+          />
+        </a>
+        <div class="file-bottom-section">
+          <div class="file-details">
+            <div>
+              <a href="#" class="file-name">File Name</a>
+              <a href="#" class="video-channel-name">...</a>
+            </div>
+            <div class="file-metadata">
+              <span>15kb</span>
+              <span>Exe</span>
+              <span>15-Apr-2022</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="file-container">
+        <a href="#" class="thumbnail">
+          <img
+            class="thumbnail-image"
+            src="http://unsplash.it/250/150?gravity=center"
+          />
+        </a>
+        <div class="file-bottom-section">
+          <div class="file-details">
+            <div>
+              <a href="#" class="file-name">File Name</a>
+              <a href="#" class="video-channel-name">...</a>
+            </div>
+            <div class="file-metadata">
+              <span>15kb</span>
+              <span>Exe</span>
+              <span>15-Apr-2022</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="file-container">
+        <a href="#" class="thumbnail">
+          <img
+            class="thumbnail-image"
+            src="http://unsplash.it/250/150?gravity=center"
+          />
+        </a>
+        <div class="file-bottom-section">
+          <div class="file-details">
+            <div>
+              <a href="#" class="file-name">File Name</a>
+              <a href="#" class="video-channel-name">...</a>
+            </div>
+            <div class="file-metadata">
+              <span>15kb</span>
+              <span>Exe</span>
+              <span>15-Apr-2022</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="file-container">
+        <a href="#" class="thumbnail">
+          <img
+            class="thumbnail-image"
+            src="http://unsplash.it/250/150?gravity=center"
+          />
+        </a>
+        <div class="file-bottom-section">
+          <div class="file-details">
+            <div>
+              <a href="#" class="file-name">File Name</a>
+              <a href="#" class="video-channel-name">...</a>
+            </div>
+            <div class="file-metadata">
+              <span>15kb</span>
+              <span>Exe</span>
+              <span>15-Apr-2022</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="file-container">
+        <a href="#" class="thumbnail">
+          <img
+            class="thumbnail-image"
+            src="http://unsplash.it/250/150?gravity=center"
+          />
+        </a>
+        <div class="file-bottom-section">
+          <div class="file-details">
+            <div>
+              <a href="#" class="file-name">File Name</a>
+              <a href="#" class="video-channel-name">...</a>
+            </div>
+            <div class="file-metadata">
+              <span>15kb</span>
+              <span>Exe</span>
+              <span>15-Apr-2022</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </div>
+  <!-- <section class="list-file-section">
+            <article class="file-container">
+                <a href="#" class="thumbnail">
+                    <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center" />
+                </a>
+                <div class="file-bottom-section">
+                    <div class="file-details">
+                        <div> <a href="#" class="file-name">File Name</a>
+                            <a href="#" class="video-channel-name">...</a>
+                        </div>
+                        <div class="file-metadata">
+                            <span>15kb</span>
+                            <span>Exe</span>
+                            <span>15-Apr-2022</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="file-container">
+                <a href="#" class="thumbnail">
+                    <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center" />
+                </a>
+                <div class="file-bottom-section">
+                    <div class="file-details">
+                        <div> <a href="#" class="file-name">File Name</a>
+                            <a href="#" class="file-menu">...</a>
+                        </div>
+                        <div class="file-metadata">
+                            <span>15kb</span>
+                            <span>Exe</span>
+                            <span>15-Apr-2022</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="file-container">
+                <a href="#" class="thumbnail">
+                    <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center" />
+                </a>
+                <div class="file-bottom-section">
+                    <div class="file-details">
+                        <div> <a href="#" class="file-name">File Name</a>
+                            <a href="#" class="video-channel-name">...</a>
+                        </div>
+                        <div class="file-metadata">
+                            <span>15kb</span>
+                            <span>Exe</span>
+                            <span>15-Apr-2022</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="file-container">
+                <a href="#" class="thumbnail">
+                    <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center" />
+                </a>
+                <div class="file-bottom-section">
+                    <div class="file-details">
+                        <div> <a href="#" class="file-name">File Name</a>
+                            <a href="#" class="video-channel-name">...</a>
+                        </div>
+                        <div class="file-metadata">
+                            <span>15kb</span>
+                            <span>Exe</span>
+                            <span>15-Apr-2022</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="file-container">
+                <a href="#" class="thumbnail">
+                    <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center" />
+                </a>
+                <div class="file-bottom-section">
+                    <div class="file-details">
+                        <div> <a href="#" class="file-name">File Name</a>
+                            <a href="#" class="video-channel-name">...</a>
+                        </div>
+                        <div class="file-metadata">
+                            <span>15kb</span>
+                            <span>Exe</span>
+                            <span>15-Apr-2022</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="file-container">
+                <a href="#" class="thumbnail">
+                    <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center" />
+                </a>
+                <div class="file-bottom-section">
+                    <div class="file-details">
+                        <div> <a href="#" class="file-name">File Name</a>
+                            <a href="#" class="video-channel-name">...</a>
+                        </div>
+                        <div class="file-metadata">
+                            <span>15kb</span>
+                            <span>Exe</span>
+                            <span>15-Apr-2022</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="file-container">
+                <a href="#" class="thumbnail">
+                    <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center" />
+                </a>
+                <div class="file-bottom-section">
+                    <div class="file-details">
+                        <div> <a href="#" class="file-name">File Name</a>
+                            <a href="#" class="video-channel-name">...</a>
+                        </div>
+                        <div class="file-metadata">
+                            <span>15kb</span>
+                            <span>Exe</span>
+                            <span>15-Apr-2022</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="file-container">
+                <a href="#" class="thumbnail">
+                    <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center" />
+                </a>
+                <div class="file-bottom-section">
+                    <div class="file-details">
+                        <div> <a href="#" class="file-name">File Name</a>
+                            <a href="#" class="video-channel-name">...</a>
+                        </div>
+                        <div class="file-metadata">
+                            <span>15kb</span>
+                            <span>Exe</span>
+                            <span>15-Apr-2022</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="file-container">
+                <a href="#" class="thumbnail">
+                    <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center" />
+                </a>
+                <div class="file-bottom-section">
+                    <div class="file-details">
+                        <div> <a href="#" class="file-name">File Name</a>
+                            <a href="#" class="video-channel-name">...</a>
+                        </div>
+                        <div class="file-metadata">
+                            <span>15kb</span>
+                            <span>Exe</span>
+                            <span>15-Apr-2022</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="file-container">
+                <a href="#" class="thumbnail">
+                    <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center" />
+                </a>
+                <div class="file-bottom-section">
+                    <div class="file-details">
+                        <div> <a href="#" class="file-name">File Name</a>
+                            <a href="#" class="video-channel-name">...</a>
+                        </div>
+                        <div class="file-metadata">
+                            <span>15kb</span>
+                            <span>Exe</span>
+                            <span>15-Apr-2022</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="file-container">
+                <a href="#" class="thumbnail">
+                    <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center" />
+                </a>
+                <div class="file-bottom-section">
+                    <div class="file-details">
+                        <div> <a href="#" class="file-name">File Name</a>
+                            <a href="#" class="video-channel-name">...</a>
+                        </div>
+                        <div class="file-metadata">
+                            <span>15kb</span>
+                            <span>Exe</span>
+                            <span>15-Apr-2022</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="file-container">
+                <a href="#" class="thumbnail">
+                    <img class="thumbnail-image" src="http://unsplash.it/250/150?gravity=center" />
+                </a>
+                <div class="file-bottom-section">
+                    <div class="file-details">
+                        <div> <a href="#" class="file-name">File Name</a>
+                            <a href="#" class="video-channel-name">...</a>
+                        </div>
+                        <div class="file-metadata">
+                            <span>15kb</span>
+                            <span>Exe</span>
+                            <span>15-Apr-2022</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section> -->
+</main>
+<script src="library.js"></script>
+{% endblock content %}
