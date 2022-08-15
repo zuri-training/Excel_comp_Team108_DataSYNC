@@ -1,0 +1,105 @@
+main {
+  width: 97%;
+  text-align: justify;
+  left: 30px;
+  padding-right: 40px;
+  font-family: "Poppins";
+  font-style: normal;
+}
+.tcdiv {
+  padding-top: 30px;
+}
+
+p,
+li {
+  color: #394a60;
+}
+h1 {
+  font-size: 36px;
+  text-align: center;
+}
+h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+}
+strong {
+  line-height: 42px;
+  color: black;
+}
+#date {
+  text-align: center;
+  line-height: 82px;
+}
+footer {
+  margin-top: 40px;
+  padding-top: 10px;
+  background: #172cf9;
+  /*position: absolute;*/
+  width: 100%;
+  bottom: 0;
+  left: 0px;
+  height: 400px;
+}
+
+footer .content {
+  max-width: 1250px;
+  margin: auto;
+  padding: 20px 30px 30px 20px;
+}
+
+footer .content .links-boxes {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+footer .content .links-boxes .box {
+  width: calc(100% / 5 - 10px);
+}
+
+footer .content .links-boxes .box li {
+  margin: 6px 0;
+  list-style: none;
+}
+
+footer .content .links-boxes .box li a {
+  color: white;
+  font: 24px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+footer .content .links-boxes .box li a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 10px auto;
+}
+
+footer .media-icon {
+  font-size: 30px;
+  align-self: flex-start;
+}
+
+footer .social {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+}
+
+.copyright {
+  color: #ffffff;
+  font-size: 12px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}

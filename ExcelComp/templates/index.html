@@ -1,0 +1,114 @@
+<title>Welcome</title>
+{% extends 'main.html' %} {% block content %} {% load static %}
+<link rel="stylesheet" type="text/css" href="{% static '/css/styles.css' %}" />
+<main>
+  <section class="section1">
+    <div class="sec1-info">
+      <h2>
+        There's a better way to <span class="com">compare </span
+        ><span class="ss">spreadsheets!</span>
+      </h2>
+      <p>Compare, Convert, Edit, Share!</p>
+      <p>The data tools you need all in one place!</p>
+    </div>
+    <div class="sec1-button">
+      <button class="comp">
+        <a href="signup">Compare Now</a>
+      </button>
+    </div>
+    <div class="sec1-stats">
+      <h3>80%</h3>
+      <h3>100%</h3>
+      <h3>5000+</h3>
+    </div>
+    <div class="sec1-txt">
+      <p>Accuracy</p>
+      <p>Secure</p>
+      <p>Users</p>
+    </div>
+  </section>
+  <section class="section2">
+    <div class="sec-header">
+      <h4><a id="zthomefeatures">Features </a></h4>
+    </div>
+    <div class="all-features">
+      <div class="feat compare">
+        <div class="text txtcom">
+          <h2>Compare</h2>
+          <p>
+            Do more in less time with DataSync's compare feature. We have made
+            identifying duplicates simple and easy. Stop the endless cycle of
+            racking your brain for the right formula, and boost your
+            productivity with DataSync's simple 2-step process to pinpoint
+            duplicates in any spreadsheet; upload and compare.
+          </p>
+        </div>
+        <div class="img">
+          <img src="{% static '/images/.svg' %}" alt="" />
+        </div>
+      </div>
+      <div class="feat protect">
+        <div class="text txtpro">
+          <h2>Protect</h2>
+          <p>
+            We understand the importance of preserving your privacy, even more
+            so when dealing with sensitive company employees' data. With
+            DataSync's protect feature, you won't have to worry about unwanted
+            eyes prying into your private business ever. We have made it easy
+            for you to activate and deactivate the protect feature on any
+            document as you deem it.
+          </p>
+        </div>
+        <div class="img">
+          <img src="{% static '/images/.svg' %}" alt="" />
+        </div>
+      </div>
+      <div class="feat share">
+        <div class="text txtshr">
+          <h2>Share</h2>
+          <p>
+            In a world where collaboration and remote work is gaining wider
+            acceptance, we understand the importance of being able to share.
+            With our share feature, you can invite your team to collaborate in
+            editing a sheet, or simply copy your document link and share, or
+            download your document and share. Whichever works for you, you can
+            rest assured that we have your back.
+          </p>
+        </div>
+        <div class="img">
+          <img src="{% static '/images/.svg' %}" alt="" />
+        </div>
+      </div>
+      <div class="feat library">
+        <div class="text txtlib">
+          <h2>Library</h2>
+          <p>
+            If you ever in doubt of the capabilities of DataSync, or you simply
+            want to learn the ropes first, our library of resources is the
+            perfect place to start.You'll be able to ffind and download publicly
+            avialable spreedsheets and test-run available features on them, to
+            get familiar with your dashboard.
+          </p>
+        </div>
+        <div class="img">
+          <img src="{% static '/images/.svg' %}" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="doc">
+    <a id="zthowtouse">
+      <img src="{% static '/images/how to use.svg' %}" alt="" />
+    </a>
+  </div>
+  <div class="section b">
+    <h3>Be the first to know about our new products</h3>
+    <p>Subscribe to our newsletter</p>
+    <div class="form">
+      <input type="email" placeholder="Enter your email address" required />
+      <button type="submit">Subscribe</button>
+    </div>
+  </div>
+</main>
+
+{% endblock %}
