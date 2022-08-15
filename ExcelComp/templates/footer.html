@@ -1,0 +1,51 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static '/css/footer.css' %}" />
+<!-- <link rel="stylesheet" href="./static/css/nav.css" /> -->
+
+<footer>
+  <div class="content">
+    <div class="footer-logo"></div>
+
+    <div class="links-boxes">
+      <ul class="box">
+        <li class="logo">
+          <img src="{% static '/images/logo.svg' %}" alt="contact logo" />
+        </li>
+        <li><a href="#">Mission statement</a></li>
+      </ul>
+      <ul class="box">
+        {% if request.user.is_authenticated %}
+        <li><a href="{% url 'dashboard' %}">Home</a></li>
+        <li><a href="{% url 'library' %}">Docs</a></li>
+        {% else %}
+        <li><a href="{% url 'home' %}">Home</a></li>
+        {% endif %}
+        <li><a href="#">About us</a></li>
+      </ul>
+      <ul class="box">
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Life display</a></li>
+        <li><a href="#">Consultations</a></li>
+      </ul>
+      <ul class="box">
+        <li><a href="{% url 'contact' %}">Contact us</a></li>
+        <li><a href="{% url 'terms' %}">Services</a></li>
+        <li><a href="#">Widgetkit</a></li>
+      </ul>
+    </div>
+  </div>
+  <hr />
+
+  <div class="social">
+    <a href="#"
+      ><img
+        src="{% static '/images/entypo-social_facebook-with-circle.svg' %}"
+        alt=""
+    /></a>
+    <a href="#"><img src="{% static '/images/et_linkedin.svg' %}" alt="" /></a>
+    <a href="#"><img src="{% static '/images/et_twitter.svg' %}" alt="" /></a>
+  </div>
+
+  <div class="copyright"><p>&copy; Copyright. All rights reserved.</p></div>
+</footer>
