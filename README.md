@@ -1,12 +1,24 @@
 ![Team_108](ExcelComp/templates/static/images/logo.svg)
 
-# Team108-DatasyncRepo
+# Team108-DataSYNC Repo
+## Introduction
+An Excel_comp project. Project carried out by Team 108.
 
-A project that allows users compare multiples excel files easily.
+This is a platform that enables users to compare the content of excel files easily.
 
 
-#**DEPLOYMENT INSTRUCTIONS**.
-Deployement 
+## Technology Used
+
+This project is created with:
+* HTML,CSS and JAVASCRIPT.
+* Python 3
+* Pandas
+* Figma
+* Django
+
+**DEPLOYMENT INSTRUCTIONS**
+
+Deployment 
 
 1) Install Python Environment/Python Virtual Environment
 2) In the Environment/Virtual Environment
@@ -35,46 +47,43 @@ Account PAge
 Other Two Functions (add-ons)
 ```
 
-PROJECT TITLE
-#DATASYNC (spreadsheet compare solution.)#
+## PROJECT TITLE
 
-<a href="#"></a><img src="images/logo.svg" alt="" />
+**DATASYNC (spreadsheet compare solution.)**
 
-###BACKGROUND OF THE PROJECT###
-Spreadsheets are excellent tools for computing data and processing information. Existing ones
-like Microsoft Excel, Google Sheets, Smartsheet, etc. can perform from simple tasks, like basic
-arithmetic, to hard tasks like visual basic applications (VBA) codes..
+![Team_108](ExcelComp/templates/static/images/logo.svg)
+
+### BACKGROUND OF THE PROJECT
+
+Spreadsheets are excellent tools for computing data and processing information. Existing ones like Microsoft Excel, Google Sheets, Smartsheet, etc. can perform from simple tasks, like basic arithmetic, to hard tasks like visual basic applications (VBA) codes..
 However, in instances where two or more worksheets, particularly ones with large amounts of
 data, locating specific information like duplicates and differences can be difficult, even for the
 best eye. Although existing Spreadsheet packages can detect such errors, they’ll require
 formulas and low codes always, plus, users will still have to scrutinise the output themselves.
 It's a laborious process that does too little to increase productivity.
 
-###DESCRIPTION###.
-In an age where we are increasingly relying on technology to boost productivity, being able to
-spot duplicates and find other specific Information in a large pool of data within spreadsheets, at
-the tap of a single button becomes a necessity. A tool like this gives data and information
-professionals a great advantage, and competitive edge.
-Which is where our solution comes in.
-Please say hello to DATASYNC.
-DATASYNC is a responsive web app leveraging JavaScript, Django and CSS to build a platform
-that allows users to upload and compare multiple spreadsheets.
+**DESCRIPTION**
 
-###PRIMARY REQUIREMENT OF THE PROJECT###:
+In an age where we are increasingly relying on technology to boost productivity, being able to spot duplicates and find other specific Information in a large pool of data within spreadsheets, at the tap of a single button becomes a necessity. A tool like this gives data and information professionals a great advantage, and competitive edge.
+Which is where our solution comes in.
+Please say hello to **DATASYNC**.
+> DATASYNC is a responsive web app leveraging JavaScript, Django and CSS to build a platform that allows users to upload and compare multiple spreadsheets.
+
+*PRIMARY REQUIREMENT OF THE PROJECT*:
 
 1. UNAUTHENTICATED USER
-   a. Visit the platform and view basic documentations on it.
-   b. Interact with the documentation
-   c. Register to know more, and use the platform
-   d. No access until registered
+   * Visit the platform and view basic documentations on it.
+   * Interact with the documentation
+   * Register to know more, and use the platform
+   * No access until registered
 2. AUTHENTICATED USERS
-   a. Full access to the platform
-   b. Allow upload csv/excel file
-   c. Users should get the option to:
-   ● Highlight duplicates in a single file
-   ● Remove duplicates and return a single file
-   ● Remove duplicates and return 2 files
-   ● Highlight duplicates and return 2 files
+   * Full access to the platform
+   * Allow upload csv/excel file
+   * Users should get the option to:
+   * Highlight duplicates in a single file
+   * Remove duplicates and return a single file
+   * Remove duplicates and return 2 files
+   * Highlight duplicates and return 2 files
 
 ###FEATURES ACCESSIBLE FOR USERS (AUTHENTICATED USERS ONLY)###
 
@@ -91,13 +100,6 @@ that allows users to upload and compare multiple spreadsheets.
 2.
 3.
 
-###TECHNOLOGIES USED###
-This project is created with:
--HTML,CSS and JAVASCRIPT.
--Python 3
--Pandas
--Figma
-
 ###PROJECT STATUS###
 Completed.
 
@@ -105,27 +107,32 @@ Completed.
 
 ###INSTRUCTIONS ON HOW TO USE THE PROJECT###
 
-###SPECIAL CREDITS###
--Major credit belongs to ZuriI4G for providing us this great opportunity to learn, unlearn and relearn new knowlegdes that is transformative.
--Google, Youtube and other resourceful platforms.
--special credit goes to all team members for collaborating and contributing resources throughout the project phase.
+**HOW TO HELP IMPROVE OR CONTRIBUTE FOR BETTERMENT OF THIS PROJECT**
+
+* Fork this repostory to your github account
+* Clone to your local system/work space
+* Input your contribution and push to the cloned repository
+* Make a pull request for incoporation.
+* Add a readme file that explains your contributions.
+
+Thank you for your contibutions.
+
+## LINKS TO ALL RESOURCES RELATED TO THIS PROJECT.
+
+1. **DESIGN**: Figma was used to Implement all designs here is the [figma link](https://www.figma.com/file/Ie8A81XMRsHiodqFwaeTO8/Team_108_excel_comp?node-id=0%3A1)
+
+
+**SPECIAL CREDITS**
+
+* Major credit belongs to Zuri and I4G for providing us this great opportunity to learn, unlearn and relearn new knowlegdes that is transformative.
+* Google, Youtube and other resourceful platforms.
+* To all team members for collaborating and contributing resources throughout the project phase.
+
 Team members includes:
 Damilare
 Yetunde
 Jamjam
 
-###HOW TO HELP IMPROVE OR CONTRIBUTE FOR BETTERMENT OF THIS PROJECT###
-.Fork this repostory to your github account
-.Clone to your local system/work space
-.Input your contribution and push to the cloned repository
-.Make a pull request for incoporation.
-.Add a readme file that explains your contributions.
-Thank you for your contibutions.
-
-###LINKS TO ALL RESOURCES RELATED TO THIS PROJECT###.
-
-1.
-2.
-
 ####COPYRIGHT####
+
 Excel_comp_Team_108
