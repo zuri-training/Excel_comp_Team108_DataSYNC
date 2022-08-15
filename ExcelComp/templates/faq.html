@@ -1,0 +1,64 @@
+{% extends 'main.html' %} {% block content %}{% load static %}
+<link rel="stylesheet" href="{% static '/css/faq.css' %}" />
+
+<main>
+  <h1>Frequently Asked Questions</h1>
+  <div class="faq-section">
+    <div class="dropdown">
+      <button class="dropbttn">
+        <img src="images/arrow.svg" alt="" />
+        How do I create an account?
+      </button>
+      <div class="dropdown-content">
+        <p>
+          To be able to create a valid account with DataSYNC you have to signup
+          with your valid email and password or any other option applied
+        </p>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbttn">
+        <img src="images/arrow.svg" alt="" />
+        How do I compare two excel sheet?
+      </button>
+      <div class="dropdown-content">
+        <p>
+          To compare two excel sheet open the workbook you want to compare. Go
+          to the view Tab, window group, and click the view side by side button
+        </p>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbttn">
+        <img src="images/arrow.svg" alt="" />
+        Will I receive invoice for my transaction?
+      </button>
+      <div class="dropdown-content">
+        <p>
+          Yes. After purchasing DataSYNC , Your invoice will be available under
+          the “Subcription” panel in DataSYNC user account. The receipt will
+          include the last 4 digits of your credit card number, purchase date,
+          transaction ID, your name, email,company name and address ( If
+          provided) and our business number.
+        </p>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbttn">
+        <img src="images/arrow.svg" alt="" />
+        Can I use DataSYNC in other devices apart from desktop?
+      </button>
+      <div class="dropdown-content">
+        <p>
+          Yes! You can use your DataSYNC subcription license on three devices
+          simultaneously, however you must be the primary user of each device.
+          This way, you can keep using DataSYNC site even if you replace your PC
+          or use different computers/phone at home and anywhere network is
+          accessible
+        </p>
+      </div>
+    </div>
+  </div>
+</main>
+
+{% endblock content %}
