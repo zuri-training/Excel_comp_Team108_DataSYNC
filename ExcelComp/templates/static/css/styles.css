@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --pale-cyan: hsla(236, 87%, 94%, 1);
+  --blue: hsl(234, 95%, 53%, 1);
+}
+
+/* NAVBAR SECTION CSS CODE*/
+
+/* SECTION 1 CSS CODES */
+.section1 {
+  width: 100%;
+  height: 1000px;
+  background-image: url("../images/ are\ in\ a\ good\ company.svg");
+  background-size: cover;
+  padding-left: 10%;
+  padding-top: 100px;
+}
+.sec1-info {
+  width: 50%;
+  /*height: 400px;*/
+}
+.sec1-info h2 {
+  color: rgb(126, 126, 126);
+  font-size: 40px;
+}
+.sec1-info .com {
+  color: #ce1949;
+}
+.sec1-info .ss {
+  color: green;
+}
+.sec1-info p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 5px;
+  color: rgb(126, 126, 126);
+}
+.sec1-button {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.sec1-button button {
+  width: 150px;
+  height: 35px;
+  margin-left: 20px;
+}
+
+.sec1-button .comp {
+  border: 2px solid #ce1949;
+  border-radius: 5px;
+  background: linear-gradient(85.8deg, #81365f -15.76%, #ce1949 73.17%);
+  margin-left: 5rem;
+}
+.sec1-button .comp:hover {
+  background: rgb(184, 183, 183);
+  border-color: rgb(184, 183, 183);
+  transition: all 0.25s;
+  opacity: 1px;
+}
+
+.comp a {
+  color: white;
+}
+.sec1-stats {
+  display: flex;
+  width: 25%;
+  justify-content: space-between;
+  margin-left: 3%;
+}
+.sec1-stats h3 {
+  color: blue;
+}
+.sec1-txt {
+  display: flex;
+  width: 25%;
+  justify-content: space-between;
+  margin-left: 1%;
+}
+
+/* SECTION 2 CSS CODES*/
+.section2 {
+  height: 1100px;
+  width: 100%;
+  background-color: rgb(236, 236, 236);
+}
+.sec-header {
+  text-align: center;
+  height: 25px;
+  padding: 15px;
+}
+.all-features {
+  height: 1000px;
+  width: 75%;
+  margin-left: 12.5%;
+}
+.feat {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.feat .text {
+  width: 40%;
+  align-self: center;
+}
+.feat h2 {
+  margin-bottom: 10px;
+  color: rgb(65, 65, 65);
+}
+.feat .img {
+  width: 40%;
+}
+.protect .img {
+  order: 1;
+  background-color: none;
+}
+.protect .txtpro {
+  order: 2;
+  text-align: end;
+}
+.library .img {
+  order: 1;
+  background-color: transparent;
+}
+.compare .img {
+  background-color: none;
+}
+.share .img {
+  background-color: none;
+}
+.library .txtlib {
+  order: 2;
+  text-align: end;
+}
+.text p {
+  font-size: 12px;
+}
+
+.section {
+  padding: 20px 0;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+.form {
+  display: inline;
+}
+.b h3 {
+  font-size: 20px;
+  color: rgb(44, 44, 44);
+  margin-bottom: 7px;
+}
+.b p {
+  margin-bottom: 10px;
+}
+.form input {
+  width: 500px;
+  height: 30px;
+  border: 1px solid #ce1949;
+  border-radius: 3px;
+  padding-left: 5px;
+}
+.form button {
+  width: 150px;
+  height: 30px;
+  color: white;
+  background: linear-gradient(85.8deg, #81365f -15.76%, #ce1949 73.17%);
+  border: 1px solid #ce1949;
+  border-radius: 3px;
+}
+
+/* LANDING PAGE FOOTER*/
+
+/* @media all and(min-width:468px) {
+  .nav {
+    justify-content: center;
+  }
+  .logo {
+    flex: 1;
+  }
+  .item.button {
+    width: auto;
+    display: block;
+  }
+  .button.sec {
+    border: 0;
+  }
+  .button a {
+    padding: 7px 15px;
+    background: red;
+  }
+} */
