@@ -1,1 +1,0 @@
-web: gunicorn Datasync.wsgi --log-file -
