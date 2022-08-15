@@ -26,9 +26,7 @@
           
         </div>
         <div class="obiii">
-          {% if url %}
-      <p> <a href='{{ url }}'> Converted File: {{ url }}</a> </p>
-      {% endif %}
+          
         </div>
       </div>
  
@@ -44,17 +42,24 @@
         </span>
 
         </div>
-         <div id="images"> </div>
+         <div id="images">{% if url %}
+      <p> <a href='{{ url }}'> Converted File: {{ url }}</a> </p>
+      {% endif %}
+       {% if url2 %}
+      <p> <a href='{{ url2 }}'> Converted File: {{ url2 }}</a> </p>
+      {% endif %}<!--  The button for File upload appears here --></div>
       </div>
  
     </div>
   </div>
   <div class="bottom">
+    
     <div class="btn-group">
    
       <button type="submit" name="deletedup" class="btn btn-red com">Delete Duplicate</button>
-      
-      <button type="submit"  name="compare" class="btn btn-red com">Highlight Duplicate</button>
+      <button type="submit" name="deletedup2" class="btn btn-red com">Seperate Duplicate</button>
+      <button type="submit"  name="compare" class="btn btn-red com">Highlight in a File</button>
+      <button type="submit"  name="compare2" class="btn btn-red com">Highlight in Both Files</button>
       <!-- <button type="submit" name="compare" class="btn btn-red com">Compare Files</button> -->
     </div>
   </div>

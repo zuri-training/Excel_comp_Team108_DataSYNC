@@ -5,7 +5,8 @@
     <h1>Get in Touch with us</h1>
     <p>Fill out the following form to send us message</p>
     <br />
-    <form action="">
+    <form method="POST" action="">
+      {% csrf_token %}
       <label for="feedname">NAME</label><br />
       <input
         type="text"
@@ -33,12 +34,14 @@
         placeholder="Message"
       ></textarea
       ><br />
-      <input id="feedbtn" type="button" value="Send Message" />
+      {% for message in messages %}
+      <p>{{message}}</p>
+      {% endfor %}
+      <input id="feedbtn" type="submit" value="Send Message" />
     </form>
   </div>
 </main>
 {% endblock content %}
-
 <script>
   document.getElementById("add_image").onclick = function (ev) {
     var image = document.getElementById("images");

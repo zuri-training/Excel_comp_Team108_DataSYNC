@@ -20,5 +20,12 @@ urlpatterns = [
     path('aboutus/', views.aboutus, name="aboutus"),
     path('faq/', views.faq, name="faq"),
     path('mission/', views.mission, name="mission"),
+    path('convert/', views.convert, name="convert"),
     # path('multipleupload/', views.multipleupload, name="multipleupload"),
+
 ]
+
+handler404 = 'ExcelComp.views.error_404'
+handler500 = 'ExcelComp.views.error_500'
+handler403 = 'ExcelComp.views.error_403'
+handler400 = 'ExcelComp.views.error_400'

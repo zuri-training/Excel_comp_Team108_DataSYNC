@@ -8,6 +8,7 @@
 .ztnav {
   background-color: rgb(212, 200, 212);
   padding: 5px 20px;
+  /* max-width: 1400px; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

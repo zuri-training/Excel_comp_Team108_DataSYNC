@@ -11,7 +11,7 @@
     {% if request.user.is_authenticated %}
     <li class="ztitem"><a href="{% url 'dashboard' %}">Home</a></li>
     <li class="ztitem"><a href="{% url 'singlefile' %}">Compare</a></li>
-    <li class="ztitem"><a href="{% url 'dashboard' %}">Convert</a></li>
+    <li class="ztitem"><a href="{% url 'convert' %}">Convert</a></li>
     <li class="ztitem"><a href="{% url 'library' %}">Files Library</a></li>
 
     {% else %}
@@ -57,7 +57,7 @@
           <a href="{% anchor 'dashboard' 'zthomefeatures' %}">Features</a>
           <a href="{% url 'aboutus' %}">About Us</a>
           <a href="{% url 'contact' %}">Contact Us</a>
-          <a href="{% url 'contact' %}">Mission Statement</a>
+          <a href="{% url 'mission' %}">Mission Statement</a>
           <a href="#">Protect File</a>
           <a href="{% url 'terms' %}">Terms and <br />Conditions</a>
           <a href="{% url 'logout' %}">Log Out</a>

@@ -1,15 +1,9 @@
 from django.contrib import admin
 from .models import *
 # Register your models here.
-from import_export.admin import ImportExportModelAdmin
-
-admin.site.register(Customer)
-# admin.site.register(File)
-admin.site.register(Order)
-admin.site.register(Tag)
-admin.site.register(ContactUs)
 
 
-@admin.register(File)
-class userdat(ImportExportModelAdmin):
-    pass
+admin.site.register(ExcelFiles)
+admin.site.register(ProcessedFiles)
+
+admin.site.register(Feedback)

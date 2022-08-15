@@ -1,6 +1,18 @@
 <title>Welcome</title>
 {% extends 'main.html' %} {% block content %} {% load static %}
 <link rel="stylesheet" type="text/css" href="{% static '/css/styles.css' %}" />
+<style>
+  .section1 {
+    width: 100%;
+    height: 1000px;
+    background-image: url("{% static '/images/you are in a good company.svg' %}");
+    /* background-size: cover; */
+    /* background-position: center; */
+    background-size: auto;
+    padding-left: 10%;
+    padding-top: 100px;
+  }
+</style>
 <main>
   <section class="section1">
     <div class="sec1-info">
@@ -44,7 +56,7 @@
           </p>
         </div>
         <div class="img">
-          <img src="{% static '/images/.svg' %}" alt="" />
+          <img src="{% static '/images/compare.svg' %}" height="100%" alt="" />
         </div>
       </div>
       <div class="feat protect">
@@ -60,7 +72,7 @@
           </p>
         </div>
         <div class="img">
-          <img src="{% static '/images/.svg' %}" alt="" />
+          <img src="{% static '/images/protect.svg' %}" height="100%" alt="" />
         </div>
       </div>
       <div class="feat share">
@@ -76,7 +88,7 @@
           </p>
         </div>
         <div class="img">
-          <img src="{% static '/images/.svg' %}" alt="" />
+          <img src="{% static '/images/share.svg' %}" height="100%" alt="" />
         </div>
       </div>
       <div class="feat library">
@@ -91,14 +103,14 @@
           </p>
         </div>
         <div class="img">
-          <img src="{% static '/images/.svg' %}" alt="" />
+          <img src="{% static '/images/library.svg' %}" alt="" height="100%" />
         </div>
       </div>
     </div>
   </section>
   <div class="doc">
     <a id="zthowtouse">
-      <img src="{% static '/images/how to use.svg' %}" alt="" />
+      <img src="{% static '/images/use.png' %}" width="100%" alt="" />
     </a>
   </div>
   <div class="section b">

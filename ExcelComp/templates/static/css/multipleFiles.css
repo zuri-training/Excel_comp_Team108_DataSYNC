@@ -6,7 +6,7 @@ main {
   display: flex;
   justify-content: space-between;
   width: 30%;
-  margin: 50px 35%;
+  margin: 5px auto 50px;
 }
 .btn-group .btn {
   width: 45%;
@@ -81,10 +81,11 @@ main {
   background: rgba(0, 0, 0, 0.75);
 }
 .bottom {
-  margin-left: 10%;
+  margin-left: 0%;
 }
 .btn-group .com {
-  margin: 1px 2%;
+  margin: 1px 1%;
+  color: white;
 }
 .dropdown #select {
   height: 40px;

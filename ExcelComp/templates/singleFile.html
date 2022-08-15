@@ -25,14 +25,18 @@
     </div>
     <div>
           {% if url %}
-      <p><a href="{{ url }}">  Converted File: {{ url }} </a></p>
+      <p><a href="{{ url }}">  File: {{ url }} </a></p>
+      {% endif %}
+      {% if url2 %}
+      <p><a href="{{ url2 }}">  File2: {{ url2 }} </a></p>
       {% endif %}
     </div>
   </div>
   <div class="bottom">
     <div class="btn-group">
       <button type="submit" name="deletedup" class="btn btn-red com">Delete Duplicate</button>
-      <button type="submit" name="compare" class="btn btn-red com">Compare Files</button>
+      <button type="submit" name="deletedup1" class="btn btn-red com">Seperate Duplicate</button>
+      <button type="submit" name="compare" class="btn btn-red com">Highlight Duplicates</button>
 
       </form>
       <button type="menu" ></button>
