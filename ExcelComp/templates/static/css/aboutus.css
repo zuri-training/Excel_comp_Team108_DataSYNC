@@ -1,0 +1,134 @@
+@import url(http://fonts.googleapis.com/css2?family=poppins:wght@200;300;400&display=swap);
+
+.section {
+  width: 100%;
+}
+
+.section .container {
+  width: 80%;
+  display: block;
+  margin: 0px auto;
+  padding: 50px 0px;
+}
+
+.container .title {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-left: 60px;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 66px;
+  color: #394a60;
+}
+
+/* my issue currently
+it won't align to the left without pushing the title to the middle, but it's supposed to just rest on top of the title, with a margin-bottom of about 10px
+.container .title h1::before{
+    content: "";
+    height: 1px;
+    width: 100px;
+    background-color: black;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+}
+*/
+.container .mission {
+  width: 100%;
+  clear: both;
+  margin-top: 50px;
+  text-align: center;
+  display: inline-block;
+}
+
+.container .mission h1 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.container .mission h1::after {
+  content: "";
+  height: 1px;
+  width: 100px;
+  background-color: black;
+  border-radius: 25px;
+  display: block;
+  margin: auto;
+}
+
+.mission p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #394a60;
+}
+
+.aucontent {
+  float: right;
+  width: 55%;
+}
+
+.image-section {
+  float: left;
+  width: 40%;
+}
+
+.image-section img {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.aucontent .article strong {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ce1949;
+}
+
+.aucontent .article p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+  color: #394a60;
+}
+
+@media screen and (max-width: 768px) {
+  .section .container {
+    width: 80%;
+    display: block;
+    margin: auto;
+  }
+
+  .aucontent {
+    float: none;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+
+  .image-section {
+    float: none;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .image-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+
+  .container .title {
+    text-align: center;
+    font-size: 30px;
+  }
+}
